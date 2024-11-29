@@ -88,17 +88,16 @@
  
 // };
 
-// let bankaccountS = { 
-//     accountName : "Abhinandan",
-//     amount : 1000,
-//     deposite : function(amount){
-//         this.amount = this.amount + amount;
-//         console.log(`Deposite Amount will be ${this.amount}`);
-//     },
-//     withdraw : function(amount){
-//         this.amount = this.amount - amount;
-//         console.log(`Withdraw Amount will be ${this.amount}`);
-//     },
-// };
-// bankaccountS.deposite(2000);
-// bankaccountS.withdraw(500);
+let bankaccountS = { 
+    accountName : "Abhinandan",
+    amount : 1000,
+    deposite : function(amount){ 
+        console.log(`Deposite Amount will be ${this.amount + amount}`);
+    },
+    withdraw : function(amount){
+        console.log(`Withdraw Amount will be ${this.amount - amount}`);
+    },
+};
+bankaccountS.deposite(2000);
+console.log(bankaccountS.amount)
+bankaccountS.withdraw(500);
